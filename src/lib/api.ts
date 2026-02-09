@@ -3,7 +3,7 @@ import { GetMessagesResponse, SendMessagePayload } from "@/types/chat";
 // API Configuration
 export const API_CONFIG = {
   sendMessage: "http://127.0.0.1:8000/api/v1/chat-webhook",
-  getMessages: "http://localhost:3000/api/chat/getMessages",
+  getMessages: "http://localhost:3000/api/chat/getTwilioMessageLogs",
 };
 
 export async function sendMessage(payload: SendMessagePayload): Promise<void> {
