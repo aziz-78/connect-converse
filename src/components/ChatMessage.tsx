@@ -8,7 +8,7 @@ interface ChatMessageProps {
 
 export function ChatMessage({ message }: ChatMessageProps) {
   const isHuman = message.sender_type === "human";
-  const timestamp = format(new Date(message.created_at), "h:mm a");
+  const timestamp = format(new Date(message.created_at), "MMM d, yyyy h:mm a");
 
   return (
     <div
